@@ -30,7 +30,8 @@ class SequenceDiagramCompiler
 
         $result = sprintf("%s->%s", $from, $to) . PHP_EOL;
 
-        if (! str_starts_with($call->getContext(), $this->options->cutOffNamespace)) {
+        $cutOffNamespace = $this->options->cutOffNamespace;
+        if (empty($cutOffNamespace) || ! str_starts_with($call->getContext(), $cutOffNamespace)) {
             $callees = $call->getCallees();
             foreach ($callees as $callee) {
                 $result .= $this->compile($callee);

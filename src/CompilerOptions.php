@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace thomasmeschke\cseq;
 
-use stdClass;
-
 class CompilerOptions
 {
     public string $basePath = '';
