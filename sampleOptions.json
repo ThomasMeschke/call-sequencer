@@ -1,0 +1,7 @@
+{
+    "basePath": "C:\\Path\\to\\project\\",
+    "cutOffNamespace": "FrameWork",
+    "replaceOptions": {
+        "Foo": "Bar"
+    }
+}
