@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-use thomas\cseq\CompilerOptions;
-use thomas\cseq\Parser;
-use thomas\cseq\Scanner;
-use thomas\cseq\SequenceDiagramCompiler;
+use thomasmeschke\cseq\CompilerOptions;
+use thomasmeschke\cseq\Parser;
+use thomasmeschke\cseq\Scanner;
+use thomasmeschke\cseq\SequenceDiagramCompiler;
+
+require("./vendor/autoload.php");
 
 if ($argc < 3) {
     echo "Usage: {$argv[0]} <inputfile> <outputfile>";
@@ -15,7 +17,6 @@ if ($argc < 3) {
 $inputfile = $argv[1];
 $outputfile = $argv[2];
 
-require("./vendor/autoload.php");
 
 $contents = file($inputfile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
 

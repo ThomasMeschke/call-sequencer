@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace thomas\cseq;
+namespace thomasmeschke\cseq;
 
 interface ICall
 {

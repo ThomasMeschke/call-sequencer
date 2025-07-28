@@ -10,7 +10,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "thomas\\cseq\\": "src/"
+            "thomasmeschke\\cseq\\": "src/"
         }
     },
     "authors": [
