@@ -8,4 +8,9 @@ class CompilerOptions
 {
     public string $basePath = '';
     public string $cutOffNamespace = '';
+    /**
+     * @var array<string, string> $replaceOptions
+     */
+    public array $replaceOptions = [];
+
 }

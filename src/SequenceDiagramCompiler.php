@@ -60,6 +60,11 @@ class SequenceDiagramCompiler
         $context = str_replace('\\', '_', $context);
         $target = str_replace('\\', '_', $target);
 
+        foreach ($this->options->replaceOptions as $search => $replace) {
+            $context = str_replace($search, $replace, $context);
+            $target = str_replace($search, $replace, $target);
+        }
+
         $call->setContext($context);
         $call->setTarget($target);
 
