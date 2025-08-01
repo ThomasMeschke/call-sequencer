@@ -7,7 +7,10 @@ namespace thomasmeschke\cseq;
 class CompilerOptions
 {
     public string $basePath = '';
-    public string $cutOffNamespace = '';
+    /**
+     * @var array<string> $cutOffNamespaces
+     */
+    public array $cutOffNamespaces = [];
     /**
      * @var array<string, string> $replaceOptions
      */

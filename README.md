@@ -33,14 +33,14 @@ The compiler options JSON file is structured as follows:
 ```json
 {
     "basePath": "",
-    "cutOffNamespace": "",
+    "cutOffNamespaces": [],
     "replaceOptions": {
     }
 }
 ```
 `basePath(string)`: Path segment to be removed from absolute paths, e.g. the projects root path. This gets removed from all absolute paths, like include paths.
 
-`cutOffNamespace(string)`: Namespace that the diagram will follow into, e.g. the used frameworks base namespace. Only the first stackframe inside this namespace will be included in every callstack.
+`cutOffNamespace(array)`: List of namespaces that the diagram will not follow into, e.g. the used frameworks base namespace. Only the first stackframe inside these namespaces will be included in every callstack.
 
 `replaceOptions(object)`: A collection of keys and string values, specifying which string is to be replace with which. Can be used to redact sensitive information like company names from the resulting diagram.
 
