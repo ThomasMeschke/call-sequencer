@@ -1,3 +1,7 @@
+![Packagist Version](https://img.shields.io/packagist/v/thomasmeschke/call-sequencer)
+![GitHub branch status](https://img.shields.io/github/checks-status/ThomasMeschke/call-sequencer/main?style=flat&label=checks%20on%20main)
+
+
 # Call-Sequencer
 Simple tool that allows to convert xdebug trace files into plantUML sequence diagrams.
 
