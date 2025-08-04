@@ -1,5 +1,5 @@
 ![Packagist Version](https://img.shields.io/packagist/v/thomasmeschke/call-sequencer)
-![GitHub branch status](https://img.shields.io/github/checks-status/ThomasMeschke/call-sequencer/main?style=flat&label=checks%20on%20main)
+![GitHub branch check runs](https://img.shields.io/github/check-runs/thomasmeschke/call-sequencer/main?label=checks%20on%20main)
 
 
 # Call-Sequencer
