@@ -20,6 +20,7 @@ class CompilerOptions
     {
         $instance = new CompilerOptions();
 
+        /** @var array<string, mixed> $options */
         $options = json_decode($json, associative: true);
         foreach ($options as $key => $value) {
             $instance->{$key} = $value;

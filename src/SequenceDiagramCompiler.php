@@ -32,7 +32,7 @@ class SequenceDiagramCompiler
 
         $endRecursion = false;
         $cutOffNamespaces = $this->options->cutOffNamespaces;
-        foreach($cutOffNamespaces as $namespace) {
+        foreach ($cutOffNamespaces as $namespace) {
             $namespace = str_replace('\\', '_', $namespace);
             if (str_starts_with($call->getContext(), $namespace)) {
                 $endRecursion = true;
