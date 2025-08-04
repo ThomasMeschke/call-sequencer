@@ -1,5 +1,5 @@
-![Packagist Version](https://img.shields.io/packagist/v/thomasmeschke/call-sequencer)
-![GitHub branch check runs](https://img.shields.io/github/check-runs/thomasmeschke/call-sequencer/main?label=checks%20on%20main)
+[![Packagist Version](https://img.shields.io/packagist/v/thomasmeschke/call-sequencer)](https://packagist.org/packages/thomasmeschke/call-sequencer)
+[![GitHub branch check runs](https://img.shields.io/github/check-runs/thomasmeschke/call-sequencer/main?label=checks%20on%20main)](https://github.com/ThomasMeschke/call-sequencer/actions/workflows/php.yml)
 
 
 # Call-Sequencer
