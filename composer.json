@@ -2,11 +2,6 @@
     "name": "thomasmeschke/call-sequencer",
     "description": "A simple tool that allows to convert xdebug trace files into plantUML sequence diagrams",
     "type": "project",
-    "require-dev": {
-        "phpstan/phpstan": "^2.1",
-        "phpunit/phpunit": "^11.5",
-        "friendsofphp/php-cs-fixer": "^3.84"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {
@@ -21,5 +16,14 @@
     ],
     "require": {
         "php": ">= 8.2"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.1",
+        "phpunit/phpunit": "^11.5",
+        "friendsofphp/php-cs-fixer": "^3.84"
+    },
+    "scripts": {
+        "stan": "vendor/bin/phpstan analyze -c ./dev/stan/phpstan.neon.dist",
+        "style": "vendor/bin/php-cs-fixer fix ./src --config ./dev/cs-fixer/.php-cs-fixer.php"
     }
 }
